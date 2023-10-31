@@ -20,7 +20,7 @@ with open('decoded.txt', 'r') as file:
 os.remove("decoded.txt")
 
 # removes the b" and reformats the code and writes to txt
-decoded_data = data[2:-1]
+decoded_data = data[3:-2]
 decoded_data = decoded_data.replace('\\\\', '\\').replace('\\t', '\t').replace('\\n', '\n')
 
 with open('formatted.txt', 'w') as file:
